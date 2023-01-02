@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .sec
+        {
+            background: #fff;
+            padding: 100px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sec .content
+        {
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+        .mxw800p
+        {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h3
+        {
+            font-size: 40px;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        p
+        {
+            position: relative;
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .teamBx
+        {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 30px;
+            max-width: 100%;
+            margin-top: 40px;
+        }
+        .teamBx .member
+        {
+            position: relative;
+            background: #000;
+            min-height: 300px;
+            width: 250px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .teamBx .member .imgBx
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .teamBx .member .imgBx img
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .teamBx .member .details
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            transition: 0.2s;
+            opacity: 0;
+        }
+        .teamBx .member:hover .details
+        {
+            opacity: 1;
+        }
+        .teamBx .member .details h2
+        {
+            color: #fff;
+            text-transform: capitalize;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        .teamBx .member .details h2 span
+        {
+            display: block;
+            font-size: 12px;
+            font-weight: 300px;
+        }
+    </style>
+</head>
+<body>
+    <section class="sec work" id="team">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Meet Our Thief Expert</h3>
+                <p>আপনাদের যেকোনো ইলিগাল কাজে ভারা করতে পারেন আমাদের এক্সপার্টদের। এরা সব ধরনের বড় ছোট চুরি করতে এক্সপার্ট।</p>
+            </div>
+            <div class="teamBx">
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="team/rakib.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h2>Z.F. Rakib <br> <span>Chorer Leader</span></h2>
+                    </div>
+                    
+                </div>
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="team/sagotto.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h2>Sagotto <br> <span>Dalim Chor</span></h2>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="team/shaol.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h2>Shaol <br> <span>Goru Chor</span></h2>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="team/simun.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h2>Simun <br> <span>Murgi Chor</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
